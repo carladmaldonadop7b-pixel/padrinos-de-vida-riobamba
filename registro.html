@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro | Padrinos de Vida Riobamba</title>
+    <meta name="description" content="Regístrate como padrino o madrina de un animal rescatado en Riobamba.">
+    <meta name="theme-color" content="#2456a6">
+    <meta property="og:title" content="Registro | Padrinos de Vida Riobamba">
+    <meta property="og:image" content="img/logo1.png">
+    <link rel="icon" type="image/png" sizes="any" href="img/logo1.png">
+    <link rel="apple-touch-icon" href="img/logo1.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="registration-page">
+    <a class="skip-link" href="#formulario">Ir al formulario</a>
+    <main class="registration-layout">
+      <section class="registration-intro" aria-labelledby="register-title">
+        <a class="back-home" href="index.html" aria-label="Volver a Padrinos de Vida">← Inicio</a>
+        <div class="registration-sky" aria-hidden="true"></div>
+        <div class="registration-copy">
+          <p class="eyebrow light-eyebrow">Padrinos de Vida</p>
+          <h1 id="register-title">Registro</h1>
+          <div class="intro-message"><h2>Únete a nuestra causa</h2><p>Completa tus datos y comienza a cambiar vidas.</p></div>
+        </div>
+        <img class="registration-pets" src="img/adorno4.png" alt="Un perro y un gato esperan una nueva oportunidad">
+      </section>
+
+      <section class="registration-form-panel" id="formulario" aria-labelledby="form-title">
+        <a class="form-logo" href="index.html"><img src="img/logo1.png" alt="Logo Padrinos de Vida"></a>
+        <div class="form-container">
+          <h2 id="form-title">Crea tu cuenta</h2>
+          <p class="privacy-note">Todos tus datos están protegidos.</p>
+          <p class="selected-animal" hidden aria-live="polite"></p>
+          <form id="registrationForm" novalidate>
+            <div class="field-group">
+              <label for="nombre">Nombre completo</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Ingresa tu nombre completo" required minlength="3">
+              <small class="field-error" id="nombre-error"></small>
+            </div>
+            <div class="field-group">
+              <label for="edad">Edad</label>
+              <input id="edad" name="edad" type="number" inputmode="numeric" min="12" max="120" placeholder="Ingresa tu edad" required>
+              <small class="field-error" id="edad-error"></small>
+            </div>
+            <div class="field-group">
+              <label for="cedula">Cédula</label>
+              <input id="cedula" name="cedula" type="text" inputmode="numeric" autocomplete="off" placeholder="Ingresa tu número de cédula" required maxlength="10" pattern="[0-9]{10}">
+              <small class="field-error" id="cedula-error"></small>
+            </div>
+            <div class="field-group">
+              <label for="correo">Correo electrónico</label>
+              <input id="correo" name="correo" type="email" autocomplete="email" placeholder="Ingresa tu correo electrónico" required>
+              <small class="field-error" id="correo-error"></small>
+            </div>
+            <div class="field-group">
+              <label for="telefono">Número de teléfono</label>
+              <input id="telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="Ingresa tu número de teléfono" required minlength="7" maxlength="20">
+              <small class="field-error" id="telefono-error"></small>
+            </div>
+            <input id="animal" name="animal" type="hidden">
+            <button class="button button-primary form-submit" type="submit">Registrarme</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <p class="login-copy">¿Ya tienes cuenta? <a href="mailto:patitasriobamba@example.com?subject=Inicio%20de%20sesión%20Padrinos%20de%20Vida">Inicia sesión</a></p>
+        </div>
+      </section>
+    </main>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

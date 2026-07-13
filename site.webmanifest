@@ -1,0 +1,11 @@
+{
+  "name": "Padrinos de Vida Riobamba",
+  "short_name": "Padrinos de Vida",
+  "description": "Apadrinamiento de animales rescatados en Riobamba.",
+  "icons": [
+    { "src": "img/logo1.png", "sizes": "any", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "theme_color": "#2456a6",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
